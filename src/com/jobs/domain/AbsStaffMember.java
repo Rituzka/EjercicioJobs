@@ -25,5 +25,53 @@ public abstract class AbsStaffMember {
 		COUNTER_MEMBERS++;
 	}
 
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
+	public double getTotalPaid() {
+		return totalPaid;
+	}
+
+	public void setTotalPaid(double totalPaid) {
+		this.totalPaid = totalPaid;
+	}
+
+	public static int getCOUNTER_MEMBERS() {
+		return COUNTER_MEMBERS;
+	}
+
+	public static void setCOUNTER_MEMBERS(int cOUNTER_MEMBERS) {
+		COUNTER_MEMBERS = cOUNTER_MEMBERS;
+	}
+
 	public abstract void pay();
 }
