@@ -48,9 +48,10 @@ public class JobsController {
 	public String getAllEmployees() {
 		String allEmployees = "";
 		for (AbsStaffMember emp: repository.getAllMembers()) {
-		allEmployees = "Nombre: "+ emp.getName() +", Dirección: "+emp.getAddress()+", Teléfono: "+emp.getPhone()+", Salario: "+emp.getTotalPaid();
+		allEmployees = "EMPLOYEES: nombre: "+ emp.getName() +", Dirección: "+emp.getAddress()+", Teléfono: "+emp.getPhone()+", Salario: "+emp.getTotalPaid();
 		
 		System.out.println(allEmployees);
+		
 		}
 		return allEmployees;
 	}
